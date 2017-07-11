@@ -77,6 +77,7 @@ def apriori(dataSet, minSupport=0.5):
 if __name__ == '__main__':
     dataSet = loadDataSet()
     L, suppData = apriori(dataSet)
+    print suppData
     i = 0
     for one in L:
         print "项数为%s的频繁项集:" % (i + 1), one, "\n"
