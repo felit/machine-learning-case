@@ -1,19 +1,22 @@
-#-*- coding:utf8 -*-
+# -*- coding:utf8 -*-
 import numpy as np
 
 
 def get_k_point():
-	pass
+    pass
 
 
 def devide_points():
-	pass
+    pass
+
 
 def new_k_point():
-	pass
+    pass
+
 
 def finished_kmeans():
-	pass
+    pass
 
-if __name__=='__main__':
-	pass
+
+if __name__ == '__main__':
+    pass
