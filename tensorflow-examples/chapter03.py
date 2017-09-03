@@ -35,9 +35,9 @@ with tf.Session() as sess:
         start = (i * batch_size) % dataset_size
         end = min(start + batch_size, dataset_size)
         sess.run(train_step, feed_dict={x: X[start:end], y_: Y[start:end]})
-    if i % 1000 == 0:
-        total_cross_entroypy = sess.run(cross_entropy, feed_dict={x: X, y_: Y})
-        print "After %d training step(s), cross entropy on all data is %g" % (i, total_cross_entroypy)
+        if i % 1000 == 0:
+            total_cross_entroypy = sess.run(cross_entropy, feed_dict={x: X, y_: Y})
+            print "After %d training step(s), cross entropy on all data is %g" % (i, total_cross_entroypy)
     print sess.run(w1)
     print sess.run(w2)
     """
